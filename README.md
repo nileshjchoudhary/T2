@@ -1,12 +1,17 @@
 # T2
-to check energtics at any stage.  gmx energy -f ener.edr -o temp.xvg or pr.xvg or te.xvg 
+to check energetics at any stage.  gmx energy -f ener.edr -o temp.xvg or pr.xvg or te.xvg 
 
 In folder wmsystem
+
 vmd 1met.pdb 
+
 %once visualise the pdb close (x) vmd main
 
 gmx solvate -cp 1met.pdb -cs spc216.gro -o solmet.pdb -maxsol 24
+
 vmd solmet.pdb
+
+
 %once visualise the pdd close (x) vmd main
 cd NVT/
 %make sure you are in NVT folder, %visualize existing files
