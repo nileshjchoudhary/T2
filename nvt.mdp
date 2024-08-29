@@ -1,0 +1,15 @@
+integrator=md
+
+dt= 0.001
+nsteps= 1000000
+
+nstxout= 100
+nstvout= 100
+nstfout=100
+nstlog=100
+nstenergy=10
+
+tcoupl=v-rescale
+tc-grps=system
+tau-t=0.01
+ref-t= 260 

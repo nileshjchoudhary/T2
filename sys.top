@@ -1,0 +1,25 @@
+[ defaults ]
+; nbfunc        comb-rule       gen-pairs       fudgeLJ fudgeQQ
+1       2       yes     1.0     1.0
+
+#include "oplsaa.ff/ffnonbonded.itp"
+[ atomtypes ]
+ opls_066   C4  6     16.04300     0.000       A    3.73000e-01  1.23010e+00 ; SIG`
+
+[ moleculetype ]
+; Name               nrexcl
+MET                  1
+
+[ atoms ]
+;   nr       type  resnr residue  atom   cgnr     charge       mass  
+     1   opls_066      1    MET   CTT      1     0.0000     16.04300
+
+
+#include "oplsaa.ff/spce.itp"
+
+[ system ]
+methane
+
+[ molecules ]
+MET 1
+SOL 24

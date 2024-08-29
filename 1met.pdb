@@ -1,0 +1,7 @@
+TITLE     GROningen MAchine for Chemical Simulation
+REMARK    THIS IS A SIMULATION BOX
+CRYST1   40.000   40.000   40.000  90.00  90.00  90.00 P 1           1
+MODEL        1
+ATOM      1  CTT MET     1      20.410  18.167  20.343  1.00  0.00           C
+TER
+ENDMDL
