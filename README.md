@@ -1,7 +1,15 @@
-# T2
+# T2 
+to check energetics at any stage.  gmx energy -f ener.edr -o temp.xvg or pr.xvg or te.xvg 
+
 wget https://github.com/nileshjchoudhary/T2/archive/refs/heads/main.zip
 
-to check energetics at any stage.  gmx energy -f ener.edr -o temp.xvg or pr.xvg or te.xvg 
+unzip main.zip
+
+cd T2-main/
+
+mkdir NVT NVE
+
+
 
 In folder wmsystem
 
@@ -23,6 +31,10 @@ cd NVT/
 
 cp ../solmet.pdb .
 
+cp ../sys.top .
+
+cp ../nvt.mdp .
+
 gmx grompp -p sys.top -f nvt.mdp -c solmet.pdb -o vt.tpr -maxwarn 1
 
 gmx mdrun -s vt.tpr -c nvtout.pdb
@@ -36,6 +48,10 @@ ls  %observe the exsiting files of NVE folder
 cp ../NVT/nvtout.pdb .
 
 cp ../NVT/state.cpt .
+
+cp ../sys.top .
+
+cp ../nve.mdp .
 
  gmx grompp -f nve.mdp -p sys.top -c nvtout.pdb -t state.cpt -o ve.tpr -maxwarn  1
  
